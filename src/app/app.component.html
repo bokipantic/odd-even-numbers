@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (eachNumber)="onNumberAdded($event)"></app-game-control>
+      <br><br>
+      <app-odd *ngFor="let num of allNumbers" [number]="num"></app-odd>
+      <hr>
+      <app-even *ngFor="let num of allNumbers" [number]="num"></app-even>
+    </div>
+  </div>
+</div>
